@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="admin, dashboard, bootstrap, template, flat, modern, theme, responsive, fluid, retina, backend, html5, css, css3">
+  <meta name="description" content="">
+  <meta name="author" content="ThemeBucket">
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <title>导航栏 - </title>
+
+<!--    <div th:include="/record/common :: commonheader"></div>-->
+
+    <!--gritter css-->
+    <link rel="stylesheet" type="text/css" href="/js/gritter/css/jquery.gritter.css" >
+
+    <link href="/css/style.css" rel="stylesheet" >
+    <link href="/css/style-responsive.css" rel="stylesheet" >
+
+
+    <script src="/js/html5shiv.js"  ></script>
+    <script src="/js/respond.min.js" ></script>
+
+
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <div th:replace="record/common :: #leftmenu"></div>
+
+    <div class="main-content">
+        <div th:replace="record/common :: headermenu "></div>
+
+    </div>
+
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<div th:replace="record/common :: commonscript"></div>
+
+<!--easy pie chart-->
+<script src="/js/easypiechart/jquery.easypiechart.js"></script>
+<script src="/js/easypiechart/easypiechart-init.js"></script>
+
+<!--Sparkline Chart-->
+<script src="/js/sparkline/jquery.sparkline.js"></script>
+<script src="/js/sparkline/sparkline-init.js"></script>
+
+<!--icheck -->
+<script src="/js/iCheck/jquery.icheck.js"></script>
+<script src="/js/icheck-init.js"></script>
+
+<!-- jQuery Flot Chart-->
+<script src="/js/flot-chart/jquery.flot.js"></script>
+<script src="/js/flot-chart/jquery.flot.tooltip.js"></script>
+<script src="/js/flot-chart/jquery.flot.resize.js"></script>
+
+
+<!--Morris Chart-->
+<script src="/js/morris-chart/morris.js"></script>
+<script src="/js/morris-chart/raphael-min.js"></script>
+
+<!--Calendar-->
+<script src="/js/calendar/clndr.js"></script>
+<script src="/js/calendar/evnt.calendar.init.js"></script>
+<script src="/js/calendar/moment-2.2.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+
+<!--common scripts for all pages-->
+<script src="/js/scripts.js"></script>
+
+<!--Dashboard Charts-->
+<script src="/js/dashboard-chart-init.js"></script>
+
+
+</body>
+</html>
