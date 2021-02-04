@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:fragment="cm6header">
     <meta charset="UTF-8">
     <title>小区事件分析</title>
 <!--    <link rel="stylesheet" href="../static/css/bootstrap.min.css">-->
@@ -63,81 +63,81 @@
 <div class="container">
     <div class="">
         <h2 align="center">小区事件分析</small></h2>
-    <div>
+<!--    <div>-->
 
-            <div class="dropdown" style="float: left">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    查看其它
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-
-                    <li><a href="/user/cm1">区域维度分析</a></li>
-                    <li><a href="/user/cm2">光交箱分析</a></li>
-                    <li><a href="/user/cm3">装维及时率分析</a></li>
-                    <li><a href="/user/cm4">装维满意度分析</a></li>
-                    <li><a href="/user/cm5">网元投诉分析</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="/navigation">返回首页</a></li>
-                </ul>
-            </div>
-
-
-
-
-<!--            <div class="" style="float: right">-->
-<!--                <button class="btn btn-danger " type="button" id=""  aria-haspopup="true" aria-expanded="true">-->
-<!--                    小区事件查看-->
-
+<!--            <div class="dropdown" style="float: left">-->
+<!--                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+<!--                    查看其它-->
+<!--                    <span class="caret"></span>-->
 <!--                </button>-->
+<!--                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
 
+<!--                    <li><a href="/user/cm1">区域维度分析</a></li>-->
+<!--                    <li><a href="/user/cm2">光交箱分析</a></li>-->
+<!--                    <li><a href="/user/cm3">装维及时率分析</a></li>-->
+<!--                    <li><a href="/user/cm4">装维满意度分析</a></li>-->
+<!--                    <li><a href="/user/cm5">网元投诉分析</a></li>-->
+<!--                    <li role="separator" class="divider"></li>-->
+<!--                    <li><a href="/navigation">返回首页</a></li>-->
+<!--                </ul>-->
 <!--            </div>-->
 
 
-<!--            <div class="col-md-2" style="float: left" >-->
-<!--                <div class="input-group">-->
-<!--                    <div class="input-group-btn">-->
-<!--                        <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"-->
-<!--                           aria-haspopup="true" aria-expanded="false">类别 <span class="caret"></span></a>-->
-<!--                        <ul class="dropdown-menu" id="type"   th:method="get">-->
-<!--                            <li><a href="#"  >全部</a></li>-->
-<!--                            <li role="separator" class="divider"></li>-->
-<!--                            <li><a href="#">电视</a></li>-->
-<!--                            <li role="separator" class="divider"></li>-->
-<!--                            <li><a href="#">宽带</a></li>-->
-
-<!--                        </ul>-->
-<!--                    </div>&lt;!&ndash; /btn-group &ndash;&gt;-->
-<!--                    <form id="ttzz">-->
-<!--                        <input type="text" id="rt" class="form-control"  name="danyuan" value="全部" aria-label="..." placeholder="==请选择==">-->
-<!--                    </form>-->
-<!--                </div>&lt;!&ndash; /input-group &ndash;&gt;-->
-<!--            </div>-->
 
 
-<!--        <div class="col-md-2" style="float: left" >-->
-<!--            <div class="input-group">-->
-<!--                <div class="input-group-btn">-->
-<!--                    <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"-->
-<!--                       aria-haspopup="true" aria-expanded="false">展示形式 <span class="caret"></span></a>-->
-<!--                    <ul class="dropdown-menu" id="type1"   th:method="get">-->
-<!--                        <li><a href="#"  >饼图</a></li>-->
-<!--                        <li role="separator" class="divider"></li>-->
-<!--                        <li><a href="#">柱状图</a></li>-->
+<!--&lt;!&ndash;            <div class="" style="float: right">&ndash;&gt;-->
+<!--&lt;!&ndash;                <button class="btn btn-danger " type="button" id=""  aria-haspopup="true" aria-expanded="true">&ndash;&gt;-->
+<!--&lt;!&ndash;                    小区事件查看&ndash;&gt;-->
 
-<!--                    </ul>-->
-<!--                </div>&lt;!&ndash; /btn-group &ndash;&gt;-->
-<!--                <form id="ttzz1">-->
-<!--                    <input type="text" id="rtz" class="form-control"  name="danyuan" value="饼图" aria-label="..." placeholder="==请选择==">-->
-<!--                </form>-->
-<!--            </div>&lt;!&ndash; /input-group &ndash;&gt;-->
+<!--&lt;!&ndash;                </button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;            <div class="col-md-2" style="float: left" >&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="input-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="input-group-btn">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"&ndash;&gt;-->
+<!--&lt;!&ndash;                           aria-haspopup="true" aria-expanded="false">类别 <span class="caret"></span></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <ul class="dropdown-menu" id="type"   th:method="get">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="#"  >全部</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li role="separator" class="divider"></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="#">电视</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li role="separator" class="divider"></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="#">宽带</a></li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&lt;!&ndash; /btn-group &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    <form id="ttzz">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" id="rt" class="form-control"  name="danyuan" value="全部" aria-label="..." placeholder="==请选择==">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </form>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&lt;!&ndash; /input-group &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        <div class="col-md-2" style="float: left" >&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="input-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="input-group-btn">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"&ndash;&gt;-->
+<!--&lt;!&ndash;                       aria-haspopup="true" aria-expanded="false">展示形式 <span class="caret"></span></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="dropdown-menu" id="type1"   th:method="get">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li><a href="#"  >饼图</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li role="separator" class="divider"></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li><a href="#">柱状图</a></li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&lt;!&ndash; /btn-group &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                <form id="ttzz1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" id="rtz" class="form-control"  name="danyuan" value="饼图" aria-label="..." placeholder="==请选择==">&ndash;&gt;-->
+<!--&lt;!&ndash;                </form>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&lt;!&ndash; /input-group &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+
+
+
+
 <!--        </div>-->
-
-
-
-
-
-        </div>
 
     </div>
 

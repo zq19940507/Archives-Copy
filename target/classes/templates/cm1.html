@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:fragment="cm1header">
     <meta charset="UTF-8">
     <title>区域维度分析</title>
 
@@ -63,6 +63,7 @@
 </head>
 <body>
 
+<div th:fragment="cm1body">
 
 <div class="container">
 
@@ -71,60 +72,60 @@
 
         <h2 align="center">区域维度分析</small></h2>
 
-        <div>
+<!--        <div>-->
 
-            <div class="dropdown" style="float: left">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="true">
-                    查看其它
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-
-
-                    <li><a href="/user/cm2">光交箱分析</a></li>
-                    <li><a href="/user/cm3">装维及时率分析</a></li>
-                    <li><a href="/user/cm4">装维满意度分析</a></li>
-                    <li><a href="/user/cm5">网元投诉分析</a></li>
-                    <li><a href="/user/cm6">小区事件分析</a></li>
-
-                    <li role="separator" class="divider"></li>
-                    <li><a href="/navigation">返回首页</a></li>
-                </ul>
-            </div>
+<!--            <div class="dropdown" style="float: left">-->
+<!--                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"-->
+<!--                        aria-haspopup="true" aria-expanded="true">-->
+<!--                    查看其它-->
+<!--                    <span class="caret"></span>-->
+<!--                </button>-->
+<!--                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
 
 
-            <!--            <div class="" style="float: right">-->
-            <!--                <a  data-toggle="modal" data-target="#events" type="button" id=""  aria-haspopup="true" aria-expanded="true">-->
-            <!--                    小区事件查看-->
-            <!--                </a>-->
+<!--                    <li><a href="/user/cm2">光交箱分析</a></li>-->
+<!--                    <li><a href="/user/cm3">装维及时率分析</a></li>-->
+<!--                    <li><a href="/user/cm4">装维满意度分析</a></li>-->
+<!--                    <li><a href="/user/cm5">网元投诉分析</a></li>-->
+<!--                    <li><a href="/user/cm6">小区事件分析</a></li>-->
 
-            <!--            </div>-->
+<!--                    <li role="separator" class="divider"></li>-->
+<!--                    <li><a href="/navigation">返回首页</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
 
 
+<!--            &lt;!&ndash;            <div class="" style="float: right">&ndash;&gt;-->
+<!--            &lt;!&ndash;                <a  data-toggle="modal" data-target="#events" type="button" id=""  aria-haspopup="true" aria-expanded="true">&ndash;&gt;-->
+<!--            &lt;!&ndash;                    小区事件查看&ndash;&gt;-->
+<!--            &lt;!&ndash;                </a>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            </div>&ndash;&gt;-->
 
 
 
-            <!--            <div class="modal fade" id="events" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
-            <!--                <div class="modal-dialog">-->
-            <!--                    <div class="modal-content">-->
-            <!--                        <div class="modal-header">-->
-            <!--                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
-            <!--                            <h4 class="modal-title" id="myModalLabel">小区事件</h4>-->
-            <!--                        </div>-->
-            <!--                        <div class="modal-body">-->
-            <!--                            -->
-            <!--                        </div>-->
-            <!--                        <div class="modal-footer">-->
-            <!--                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>-->
-            <!--                            <button type="button" class="btn btn-primary">导出明细</button>-->
-            <!--                        </div>-->
-            <!--                    </div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
-            <!--                </div>&lt;!&ndash; /.modal &ndash;&gt;-->
-            <!--            </div>-->
 
 
-        </div>
+<!--            &lt;!&ndash;            <div class="modal fade" id="events" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">&ndash;&gt;-->
+<!--            &lt;!&ndash;                <div class="modal-dialog">&ndash;&gt;-->
+<!--            &lt;!&ndash;                    <div class="modal-content">&ndash;&gt;-->
+<!--            &lt;!&ndash;                        <div class="modal-header">&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <h4 class="modal-title" id="myModalLabel">小区事件</h4>&ndash;&gt;-->
+<!--            &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--            &lt;!&ndash;                        <div class="modal-body">&ndash;&gt;-->
+<!--            &lt;!&ndash;                            &ndash;&gt;-->
+<!--            &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--            &lt;!&ndash;                        <div class="modal-footer">&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <button type="button" class="btn btn-primary">导出明细</button>&ndash;&gt;-->
+<!--            &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--            &lt;!&ndash;                    </div>&lt;!&ndash; /.modal-content &ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;                </div>&lt;!&ndash; /.modal &ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;            </div>&ndash;&gt;-->
+
+
+<!--        </div>-->
 
 
     </div>
@@ -2075,6 +2076,6 @@
 
 </script>
 
-
+</div>
 </body>
 </html>
